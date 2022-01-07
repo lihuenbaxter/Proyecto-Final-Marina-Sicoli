@@ -1,0 +1,198 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+/* INDEX */
+ .nav-item{
+   justify-content: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    background-size: auto;
+}
+.img{
+ height: 50%;
+  width: 50%;
+  margin: auto;
+  padding: 100%;
+  text-align: center;
+  }
+
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.logo{
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content:left;
+    padding-left: 45%;
+}
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content:flex-end; 
+}
+
+.logo{
+    justify-content: center;
+}
+  
+/* CONTACTO */
+.pcontacto{
+ color:black;
+ font-size:xx-large;   
+}
+
+h1{
+    text-align: center;
+}
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-googleplus {background: #d95232;}
+	.social ul li .icon-pinterest {background: #ae181f;}
+	.social ul li .icon-mail {background: #666666;}
+
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+.btn-wsp{
+	position: fixed;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	bottom: 30px;
+	right: 30px;
+	background: #0df053;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
+	z-index: 100;
+}
+.btn-wsp.hover{
+	text-decoration: none;
+	color: #0df053;
+	background: #fff;
+}
+@media only screen and (mini-width:320pxpx) and (max-width:768px){
+	.btn-wsp{
+		width:63px;
+		height: 63px;
+		line-height: 66px;
+	}
+}
+.encabezado {
+    color : #36A0FF; 
+    fuente-tamaño: 27px ; 
+    relleno: 10px ; 
+}
+
+.bigicon {
+    fuente-tamaño: 35px ; 
+    color:#36A0FF; 
+}
+* {
+	box-sizing: border-box;
+  }
+  body {
+	margin: 0;
+	font-family: sans-serif;
+  }
+  .formulario {
+	width: 500px;
+	max-width: 100%;
+	margin: auto;
+	margin-top: 30px;
+	padding: 20px;
+	box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+	position: relative;
+  }
+  .formulario__titulo {
+	text-align: center;
+	margin-top: 0;
+	color: rgba(0,0,0,0.7);
+  }
+  .formulario__input, .formulario__label, .formulario__submit {
+	display: block;
+	width: 100%;
+	font-size: 1.3em;
+  }
+  .formulario__input {
+	padding: 20px;
+	background: rgba(0,0,0,0.1);
+	border: 1px solid rgba(0,0,0,0.3);
+	margin-bottom: 40px;
+  }
+  .formulario__input:focus {
+	outline: 1px solid rgba(0,0,0,0.7);
+  }
+  .formulario__input:focus + .formulario__label{
+	margin-top: -135px;
+  }
+  .formulario__label {
+	padding-left: 15px;
+	position: absolute;
+	margin-top: -85px;
+	z-index: -20;
+	color: rgba(0,0,0,0.5);
+	transition: all 0.2s;
+  }
+  .formulario__submit {
+	background: rgba(0,0,0,0.7);
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+	border: none;
+  }
+  .fijar {
+	margin-top: -135px;
+  }
+
+  
+  @media screen and (max-width: 980px){
+    #contenedor{
+        width: 90%;
+    }
+    #contenido{
+        width: 60%;
+    }
+    #barra_lateral{
+        width:30%;
+    }
+}
+@media screen and (max-width: 480px){
+    #encabezado{
+        height: auto;
+    }
+    #contenido{
+        width: auto;
+    }
+    #barra_lateral{
+        display:none;
+    }
+}
